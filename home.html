@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>HOME PAGE</title>
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link  rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Custom styles for this template -->
+</head>
+<style type="text/css">
+table{
+    border-collapse: collapse;
+  }
+  th{
+    border:1px solid black;
+    padding: 5px;
+    text-align: left;
+    background: grey;
+    color: white;
+  }
+  td{
+    padding: 5px;
+    border:1px solid black;
+  }
+</style>
+<body id="bd">
+
+<nav class="navbar navbar-fixed-top">
+  <div class="container-fluid topBar">
+    <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-5 timedate">
+      <h4 id="dt"><span id="time_txt"></span>, <span id="date"></span></h4>
+      </div>
+      <div class="col-xs-12 col-sm-7 text-right mymenu">
+        <nav class="navbar navbar-default homeContact">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+
+          <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="nav navbar-nav pull-right">
+            <li><a  class="active" href="home.html">Home</a></li>
+            <li><a href="putData.html">Contact us</a></li>
+          </ul>
+          </div>
+        </nav> 
+        
+      </div>
+    </div>
+  </div>
+</div>
+</nav> 
+  <div id="btncont" class="container" align="center">
+    <h2 style="color: #fff;">click to display the data</h2><br>
+    <button id="click" class="btn btn-info btn-lg">See Data Here</button>
+    
+  </div>
+<div id="cont" class="container" align="center">
+  <h1 style="color: #fff;">Datas</h1><br>
+  <table style="background: #fff;">
+  <thead>
+    <tr>
+      <th>First Name </th>
+      <th>Last Name </th>
+      <th>Email_Id </th>
+      <th>Mobile_No </th>
+      <th>Gender </th>
+      <th>City  </th>
+      <th>Message  </th>
+    </tr>
+  </thead>
+    
+    <tbody id="txtB">
+    </tbody>
+  </table>
+</div>
+
+<!-- footer here -->
+<div class="container-fluid">
+  <p id="footerHome">design by <a target="_blank" href="https://www.facebook.com/sagar.suman.773">@Amarjeet</a>.</p>
+</div>
+
+
+
+<script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBPDCQXLZ90tQD6nzhSJKYP_RXJ3V2yNAA",
+    authDomain: "demo1-bb166.firebaseapp.com",
+    databaseURL: "https://demo1-bb166.firebaseio.com",
+    storageBucket: "demo1-bb166.appspot.com",
+    messagingSenderId: "137249593493"
+  };
+  firebase.initializeApp(config);
+</script>
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>    
+<script src="script/bootstrap.min.js"></script>
+<script type="text/javascript" src="script/js.js"></script>
+</body>
+</html>

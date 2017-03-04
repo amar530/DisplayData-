@@ -1,0 +1,82 @@
+#bd{
+  background: #000;
+}
+
+.topBar{
+  background: #E74C3C;
+ 
+
+}
+
+#dt{
+  color: #ffffff;
+}
+.timedate{
+  margin-top: 15px;
+}
+.mymenu{
+  margin-top: 10px;
+  
+}
+.mymenu .homeContact{
+  background: none;
+  border: none;
+}
+
+table{
+    border-collapse: collapse;
+  }
+
+  th{
+    border:1px solid black;
+    text-align: left;
+    background: grey;
+    color: white;
+  }
+  td{
+    border:1px solid black;
+  }
+
+#footerHome{
+
+  background: #000; 
+  padding: 13px 0; 
+  margin-top: 300px; 
+  text-align: center;
+}
+#footerContact{
+  background: #000; 
+  padding: 13px 0; 
+  margin-top: 10px; 
+  text-align: center;
+
+}
+#footerHome a{
+  color: #fff;
+}
+
+#footerContact a{
+  color: #fff;
+}
+#btncont{
+  margin-top: 200px;
+}
+#cont{
+  margin-top: 100px; 
+  display: none;
+}
+
+/******** media Query***********/
+@media (max-width: 1200px)
+  {
+    .mymenu .pull-right{
+      float: none !important;
+    }
+
+    .logo{
+      text-align: center;
+    }
+  }
+
+  
+
